@@ -1,0 +1,6 @@
+### Concert Porter
+**Site:** [mickdarling.github.io/concert-porter](https://mickdarling.github.io/concert-porter/) | **GitHub:** [mickdarling/concert-porter](https://github.com/mickdarling/concert-porter) | **Write-up:** [The agents did most of this one](/2026/07/concert-porter-the-agents-did-most-of-this-one/)
+A friend has years of concerts logged on Concert Archives and wanted them on What I've Heard. My agents worked out the interesting part while we were still on the phone: What I've Heard keeps no database of its own, it reads the setlist.fm archive, so moving a history is a matching problem. They built the matcher, the site, and the relay almost entirely on their own; my whole contribution was four requests.
+### MakerPerks adapter
+**MCP endpoint:** `makerperks.mcpaql.com` | **GitHub:** [mcpaql/makerperks-adapter](https://github.com/mcpaql/makerperks-adapter) | **Write-up:** [A weekend MCP-AQL adapter](/2026/07/a-weekend-mcp-aql-adapter-for-makerperks/)
+[Nate Aune](https://github.com/natea) built [MakerPerks](https://makerperks.com), a directory of builder perks. I spent a weekend putting an MCP-AQL adapter in front of it so agents get deterministic answers instead of walking a web interface built for human eyes. Mine found several perks that will be quite useful to me.
