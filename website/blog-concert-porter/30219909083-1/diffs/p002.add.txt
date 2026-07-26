@@ -1,0 +1,19 @@
+---
+title: "A Weekend MCP-AQL Adapter for MakerPerks"
+date: 2026-07-26
+draft: false
+author: Mick Darling
+created: 2026-07-26T15:00:00-04:00
+description: My friend Nate Aune built MakerPerks, a directory of builder perks. I built an MCP-AQL adapter for it so my agents can query it directly instead of walking through a web interface.
+tags:
+  - play
+  - projects
+  - mcp-aql
+  - agents
+  - open-source
+My friend [Nate Aune](https://github.com/natea) built [MakerPerks](https://makerperks.com), a curated directory of builder perks: free credits, discounts, and programs for startups, students, open source maintainers, and indie developers. There is a lot of real money sitting in those programs that most builders never claim. He talked about it on [Sundai](https://sundai.club), the AI hacker community we are both part of, and I decided to see if I could build him an MCP server super quick. I may have gone a little overboard. It took a weekend, and the adapter is live at `makerperks.mcpaql.com`, built with [MCP-AQL](https://mcpaql.com). Any MCP client can point at it and ask real questions: what can a student claim, what can an open source maintainer claim, how much is it worth, and where do you redeem it.
+Since then, MakerPerks has added its own first-party MCP endpoint at `mcp.makerperks.com`, built on the official MCP SDK. Agents now have two doors into the same directory. And that's exactly how open-source federated projects work. Multiple different paths to and from multiple different solutions, coexisting comfortably.
+Part of the reason I built it was to see how easily my own tools would plug together to make something like this work. They plugged together very easily. But the bigger reason is how I want to use tools like this at all. MakerPerks is useful to me, and I knew I wanted some of those perks myself. What I did not want was to go through a search interface on the web. I hate walking through user interfaces, and I do not want my agents walking through one either, clicking around a website built for human eyes. I want them to have deterministic, very clear processes for finding information. When agents get solid deterministic data they are much less likely to hallucinate, click the wrong thing, or burn a pile of tokens wandering around a UI. So I pointed my agents at the adapter, and they found several perks that will be quite useful to me.
+The design detail I like most is that it is federated. When a signup process does not match what MakerPerks shows, that correction flows back into the system for the next person. It is self-correcting as more people use it.
+The shape of the thing is bigger than developer credits. MakerPerks is persona-first: you browse by who you are, whether that is a startup, a student, an open source maintainer, an indie dev, or a non-profit, instead of digging through vendor categories. Each record says who a program is for, what you get, and how to claim it. That is an application process, and a directory of application processes could work for any number of applications, for any number of people and organizations. Grants, contests, events, summer camps, sports leagues. Anywhere the question is "I am this kind of person, what can I apply for, and how," the same open format and the same adapter pattern work unchanged. There is a real opportunity sitting there.
+The adapter is open source at **[github.com/mcpaql/makerperks-adapter](https://github.com/mcpaql/makerperks-adapter)**. MakerPerks itself is at **[makerperks.com](https://makerperks.com)**, and it deserves your traffic.
