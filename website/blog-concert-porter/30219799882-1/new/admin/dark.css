@@ -1,0 +1,245 @@
+/* Dark mode for Decap CMS */
+:root {
+  color-scheme: dark;
+}
+
+/* Base backgrounds */
+html, body {
+  background-color: #161b22 !important;
+  color: #e6edf3 !important;
+}
+
+/* Header */
+header, [class*="AppHeader"] {
+  background-color: #1c2128 !important;
+}
+
+header *, [class*="AppHeader"] * {
+  color: #e6edf3 !important;
+}
+
+/* Sidebar */
+[class*="Sidebar"] {
+  background-color: #161b22 !important;
+}
+
+[class*="Sidebar"] * {
+  color: #e6edf3 !important;
+}
+
+/* Sidebar selected and hover */
+[class*="SidebarNavLink"].sidebar-active,
+[class*="TreeNavLink"].sidebar-active,
+[class*="SidebarNavLink"]:hover,
+[class*="TreeNavLink"]:hover {
+  background-color: #1f6feb !important;
+}
+
+/* Main content area */
+[class*="Main"], [class*="Collection"] {
+  background-color: #161b22 !important;
+}
+
+/* Cards */
+[class*="Card"], [class*="card"] {
+  background-color: #1c2128 !important;
+  color: #e6edf3 !important;
+}
+
+[class*="Card"] *, [class*="card"] * {
+  color: #e6edf3 !important;
+}
+
+/* Card hover */
+a[class*="ListCardLink"]:hover,
+a[class*="GridCardLink"]:hover {
+  background-color: #1f6feb !important;
+}
+
+a[class*="ListCardLink"]:hover *,
+a[class*="GridCardLink"]:hover * {
+  background-color: transparent !important;
+  background: transparent !important;
+}
+
+/* Text colors */
+h1, h2, h3, h4, h5, h6, p, span, li {
+  color: #e6edf3 !important;
+}
+
+a {
+  color: #58a6ff !important;
+}
+
+/* Buttons */
+button, [class*="Button"] {
+  background-color: #21262d !important;
+  color: #e6edf3 !important;
+}
+
+[class*="Publish"], [class*="green"] {
+  background-color: #238636 !important;
+  color: #ffffff !important;
+}
+
+/* ========================================
+   FORM FIELDS AND LABELS
+   ======================================== */
+
+/* Field labels */
+[class*="FieldLabel"],
+[class*="fieldLabel"],
+label {
+  background-color: transparent !important;
+  background: transparent !important;
+  color: #8b949e !important;
+  border: none !important;
+}
+
+/* Remove the ::after line */
+[class*="FieldLabel"]::after,
+[class*="fieldLabel"]::after {
+  display: none !important;
+}
+
+/* All form inputs including date pickers */
+input, textarea, select,
+input[type="text"],
+input[type="date"],
+input[type="datetime-local"],
+[class*="DateTimeControl"],
+[class*="dateTime"] {
+  background-color: #0d1117 !important;
+  color: #e6edf3 !important;
+  border: 1px solid #30363d !important;
+}
+
+/* Widget containers - remove backgrounds and borders */
+[class*="ControlContainer"],
+[class*="controlContainer"],
+[class*="Widget"],
+[class*="Control"] {
+  background-color: transparent !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+/* ========================================
+   EDITOR / BODY AREA - BLACK BACKGROUND
+   ======================================== */
+
+/* The main editor wrapper */
+[class*="cms-editor"],
+[class*="MarkdownControl"],
+[class*="markdownControl"] {
+  background-color: #000000 !important;
+  border: none !important;
+}
+
+/* Editor toolbar */
+[class*="Toolbar"] {
+  background-color: #161b22 !important;
+  border: none !important;
+  border-bottom: 1px solid #30363d !important;
+}
+
+[class*="Toolbar"] * {
+  color: #e6edf3 !important;
+}
+
+/* The actual content editing area - black */
+[data-slate-editor="true"],
+[data-slate-node],
+[contenteditable="true"],
+[class*="VisualEditor"],
+[class*="visualEditor"],
+[class*="RawEditor"],
+[class*="rawEditor"],
+[class*="cms-editor"] > div,
+[class*="cms-editor"] > div > div {
+  background-color: #000000 !important;
+  color: #e6edf3 !important;
+  border: none !important;
+}
+
+/* Remove white borders/lines from editor */
+[class*="cms-editor"] *,
+[class*="MarkdownControl"] * {
+  border-color: transparent !important;
+}
+
+/* Keep some borders for structure */
+[class*="cms-editor"] [class*="Toolbar"] {
+  border-bottom: 1px solid #30363d !important;
+}
+
+/* CodeMirror */
+.CodeMirror {
+  background-color: #000000 !important;
+  color: #e6edf3 !important;
+  border: none !important;
+}
+
+/* ========================================
+   OTHER ELEMENTS
+   ======================================== */
+
+/* Dropdowns and menus */
+[class*="dropdown"], [class*="menu"] {
+  background-color: #1c2128 !important;
+}
+
+[class*="dropdown"] *, [class*="menu"] * {
+  color: #e6edf3 !important;
+}
+
+[class*="dropdownItem"]:hover,
+[class*="option"]:hover {
+  background-color: #1f6feb !important;
+}
+
+/* Modal */
+[class*="Modal"] {
+  background-color: #1c2128 !important;
+}
+
+[class*="Modal"] * {
+  color: #e6edf3 !important;
+}
+
+/* Editor container */
+[class*="Editor"], [class*="editor"] {
+  background-color: #161b22 !important;
+  border: none !important;
+}
+
+/* The split pane / editor pane */
+[class*="Pane"], [class*="pane"],
+[class*="splitPane"], [class*="SplitPane"] {
+  background-color: #161b22 !important;
+  border: none !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #161b22;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #484f58;
+}
+
+/* Remove any remaining white borders */
+* {
+  border-color: #30363d !important;
+}
