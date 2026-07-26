@@ -1,0 +1,18 @@
+---
+title: "A Weekend MCP-AQL Adapter for MakerPerks"
+date: 2026-07-26
+draft: false
+author: Mick Darling
+created: 2026-07-26T15:00:00-04:00
+description: I put an MCP server in front of a friend's builder-perks directory using MCP-AQL. A weekend project that points at something bigger, a discovery endpoint for application processes of all kinds.
+tags:
+  - play
+  - projects
+  - mcp-aql
+  - agents
+  - open-source
+A friend of mine built [MakerPerks](https://makerperks.com), a curated directory of builder perks: free credits, discounts, and programs for startups, students, open source maintainers, and indie developers. I saw it after we hung out one evening and thought it wanted an MCP server in front of it, so agents could query it directly. I used [MCP-AQL](https://mcpaql.com) to build one.
+It took a weekend, and most of that ran in the background while I did other things. The adapter serves the directory at `makerperks.mcpaql.com`, and any MCP client can ask it real questions: what can a student claim, what can an open source maintainer claim, how much is it worth, and where do you redeem it.
+The honest reason I built it was to see how easily my own tools would plug together. The answer was very easily, and the result came out quite solid for a casual weekend.
+The part I keep thinking about afterward is the format. A directory of perks with personas, eligibility rules, and redemption steps is really a directory of application processes, and that shape fits far more than developer credits. Grants, contests, events, summer camps, sports leagues. Anywhere the question is "I am this kind of person, what can I apply for, and how," the same open format and the same adapter pattern work unchanged. There is a real opportunity sitting there.
+The adapter is open source at **[github.com/mcpaql/makerperks-adapter](https://github.com/mcpaql/makerperks-adapter)**, and MakerPerks itself is at **[makerperks.com](https://makerperks.com)**.
