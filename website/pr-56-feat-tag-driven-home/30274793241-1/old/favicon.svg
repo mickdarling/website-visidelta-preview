@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Mick Darling">
+  <rect width="32" height="32" rx="7" fill="#0A1020"/>
+  <path d="M7.75 6.1 L20.95 12.7 L20.95 27.55 L7.75 20.95 Z" fill="#0369A1"/>
+  <path d="M20.95 12.7 L24.25 11.05 L24.25 25.9 L20.95 27.55 Z" fill="#1E3A8A"/>
+  <path d="M11.05 4.45 L24.25 11.05 L20.95 12.7 L7.75 6.1 Z" fill="#0497E7"/>
+  <g fill="#2EB2FB">
+    <ellipse cx="12.7" cy="6.92" rx="2.33" ry="1.17"/>
+    <rect x="10.37" y="5.28" width="4.66" height="1.64"/>
+    <ellipse cx="12.7" cy="5.28" rx="2.33" ry="1.17"/>
+    <ellipse cx="19.3" cy="10.22" rx="2.33" ry="1.17"/>
+    <rect x="16.97" y="8.57" width="4.66" height="1.65"/>
+    <ellipse cx="19.3" cy="8.57" rx="2.33" ry="1.17"/>
+  </g>
+</svg>
