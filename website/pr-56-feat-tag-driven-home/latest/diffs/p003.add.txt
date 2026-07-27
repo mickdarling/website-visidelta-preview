@@ -1,0 +1,8 @@
+card_name: Orbital Lifeboats
+project_url: https://lifeboats.mickdarling.com/
+project_meta: "2026"
+project_blurb: >-
+  Could you pre-position emergency caches in orbit the way the Channel had
+  rescue buoys? Orbital mechanics flips it: the lifeboat has to come to you.
+repo: mickdarling/orbital-lifeboats
+  - play
