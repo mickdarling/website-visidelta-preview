@@ -1,0 +1,8 @@
+card_name: MakerPerks adapter
+project_url: https://github.com/mcpaql/makerperks-adapter
+project_meta: MCP-AQL adapter
+project_blurb: >-
+  An MCP-AQL adapter over Nate Aune's MakerPerks directory of builder perks,
+  so agents get deterministic answers about what is claimable instead of
+  walking a web interface.
+repo: mcpaql/makerperks-adapter

@@ -1,0 +1,7 @@
+card_name: Concert Porter
+project_url: https://mickdarling.github.io/concert-porter/
+project_meta: tool · AGPL-3.0
+project_blurb: >-
+  Ports your Concert Archives history into What I've Heard, matched night by
+  night through the setlist.fm archive. The agents built almost all of it.
+repo: mickdarling/concert-porter
